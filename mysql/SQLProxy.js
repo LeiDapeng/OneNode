@@ -33,6 +33,9 @@ const proxy = {
 			for (let i = 0; i < rows.length; i++) {
 				sql = rows[i].sql_content;
 				param.forEach(element => {
+					if(element=='time'){
+						element=new Date().getTime();
+					}
 					sql = sql.replace('$p', `'${element}'`)
 				});
 				console.log('最终执行sql:'+sql);

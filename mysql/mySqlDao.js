@@ -6,7 +6,7 @@ var connection =getNewConnection();
  */
 function getNewConnection(){
 	return mysql.createConnection({
-		host     : '192.168.1.1',       //主机
+		host     : '182.92.78.56',       //主机
 		user     : 'root',               //MySQL认证用户名
 		password:'123456',        //MySQL认证用户密码
 		port: '3306',
