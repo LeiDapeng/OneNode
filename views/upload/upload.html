@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+    <form method="post" enctype="multipart/form-data" action="/fn/file/uploading">
+        <dl>
+          <dt>静态文件上传</dt>
+          <dd>文件名称:<input type="text" name="fileName"></dd>
+          <dd>文件目录:<input type="text" name="dirName"></dd>
+          <dd>文件:<input type="file" name="inputFile"></dd>
+          <dd>解压:<input type="radio" value='yes' name="isZip">是</input><input type="radio" value='false' name="isZip">否</input></dd>
+          <dd><input type='submit' value='上传文件'></dd>
+        </dl>
+      </form>
+</body>
+</html>
